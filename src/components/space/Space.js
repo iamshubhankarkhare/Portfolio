@@ -191,7 +191,7 @@ class ThreeScene extends Component {
     render() {
         return (
             <div
-                style={{ width: ' 100vw', height: '100vh' }}
+                style={{ width: ' 100vw', height: '100vh', position: "absolute" }}
                 ref={(mount) => { this.mount = mount }}
             />
         )

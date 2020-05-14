@@ -1,9 +1,6 @@
 .container {
     height: 10%;
-    width: 30%;
-    position: absolute;
+    width: 100%;
+    position: relative;
     background-color: azure;
-    z-index: 10;
-    top: 50%;
-    left: 40%;
 }
