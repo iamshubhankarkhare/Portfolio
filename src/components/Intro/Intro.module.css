@@ -1,0 +1,9 @@
+.container {
+    height: 10%;
+    width: 30%;
+    position: absolute;
+    background-color: azure;
+    z-index: 10;
+    top: 50%;
+    left: 40%;
+}
