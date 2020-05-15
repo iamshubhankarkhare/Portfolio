@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from "./NavComp.module.css";
-// import Intro from '../Intro/Intro'
+import Intro from '../Intro/Intro'
 
 function NavComp() {
     const [activeTab, setActiveTab] = useState('0');
@@ -12,9 +12,9 @@ function NavComp() {
 
     return (
         <div className={styles.navContainer}>
-            {/* <div id={(activeTab === '0' ? styles.active : '')} className={styles.content}>
+            <div id={(activeTab === '0' ? styles.active : '')} className={styles.content}>
                 <Intro></Intro>
-            </div> */}
+            </div>
             <div id={(activeTab === '1' ? styles.active : '')} className={styles.content}>
                 <p>about stuff jhghjghjghjgjhghjghjg</p>
 
@@ -35,7 +35,7 @@ function NavComp() {
 
 
 
-        </div >
+        </div>
     )
 }
 
