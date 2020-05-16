@@ -8,7 +8,7 @@ function Audio() {
 
     var sound = new Howl({
         src: [para],
-        autoplay: true,
+        autoplay: false,
         loop: true,
     });
     sound.once('load', () => {

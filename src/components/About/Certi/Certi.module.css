@@ -1,0 +1,72 @@
+.container {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemContainer {
+    border: 1px solid white;
+    display: flex;
+}
+
+.itemContainer img {
+    height: 10%;
+    width: 10%;
+    padding: 1%;
+    margin: 5%;
+}
+
+.certiData {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.certiData h3 {
+    font-size: x-large;
+    margin: 5%;
+    font-weight: 100;
+    color: white;
+}
+
+.certiData h5 {
+    font-size: large;
+    margin: 4%;
+    margin-left: 5%;
+    font-weight: 70;
+    color: rgb(201, 195, 195);
+}
+
+.certiData a {
+    font-size: medium;
+    text-decoration: none;
+    color: rgb(134, 179, 218);
+    margin: 3%;
+    margin-left: 5%;
+    font-weight: 50;
+}
+
+.loadButton {
+    align-self: center;
+    justify-self: center;
+    margin: 10px;
+}
+
+.loadButton button {
+    background: none;
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    border: 1px solid whitesmoke;
+    letter-spacing: 2px;
+    font-family: Poppins;
+}
+
+@media(max-width:760px) {
+    .itemContainer img {
+        height: 20%;
+        width: 20%;
+    }
+}
