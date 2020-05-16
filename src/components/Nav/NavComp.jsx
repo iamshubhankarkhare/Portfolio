@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from "./NavComp.module.css";
 import Intro from '../Intro/Intro'
 import About from '../About/About'
+import Contact from '../Contact/Contact'
 
 function NavComp() {
     const [activeTab, setActiveTab] = useState('0');
@@ -39,7 +40,7 @@ function NavComp() {
                 <p>project stuff jhghjghjghjgjhghjghjg</p>
             </div>
             <div id={(activeTab === '3' ? styles.active : '')} className={styles.content}>
-                <p>contact stuff jhghjghjghjgjhghjghjg {activeTab}</p>
+                <Contact handleClose={handleClose}></Contact>
             </div>
             <div className={`${styles.navButtons} ${hideNav ? styles.hide : ''}`}>
                 <button onClick={() => { toggle('1'); }}>About me</button>

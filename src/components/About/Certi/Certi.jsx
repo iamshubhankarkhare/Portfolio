@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import styles from './Certi.module.css'
 
 function Certi({ certificates }) {
-    console.log(certificates);
     const [loadLimit, setLoadLimit] = useState(3)
     var renderCards = () => {
         return certificates.slice(0, loadLimit).map((certi, i) => <div className={styles.itemContainer} key={i}>
