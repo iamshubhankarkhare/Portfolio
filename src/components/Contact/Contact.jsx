@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Contact.module.css'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 
 function Contact({ handleClose }) {
+    const [isCopied, setIsCopied] = useState('')
+    const handleCopy = (e) => {
+        setIsCopied(e)
+        setTimeout(() => {
+            setIsCopied('')
+        }, 3000);
+    }
     return (
         <div className={styles.container}>
             <button className={styles.closebtn} onClick={(e) => handleClose(e)}>X</button>
@@ -12,19 +19,19 @@ function Contact({ handleClose }) {
                 <div className={styles.itemContainer}>
                     <h3>E-mail : iamshubhankarkhare@gmail.com </h3>
                     <CopyToClipboard text="iamshubhankarkhare@gmail.com">
-                        <button>Copy</button>
+                        <button onClick={() => handleCopy('email')}>{isCopied === 'email' ? "Copied!" : "Copy"}</button>
                     </CopyToClipboard>
                 </div>
                 <div className={styles.itemContainer}>
                     <h3>Contact no. : 7905077163 </h3>
                     <CopyToClipboard text="7905077163">
-                        <button>Copy</button>
+                        <button onClick={() => handleCopy('number')}>{isCopied === 'number' ? "Copied!" : "Copy"}</button>
                     </CopyToClipboard>
                 </div>
                 <div className={styles.itemContainer}>
                     <h3>linkedin : <a href={`https://www.linkedin.com/in/shubhankar-khare-6a5856192`} target="_blank" rel="noopener noreferrer">shubhankar-khare</a></h3>
                     <CopyToClipboard text="https://www.linkedin.com/in/shubhankar-khare-6a5856192">
-                        <button>Copy</button>
+                        <button onClick={() => handleCopy('linkedin')}>{isCopied === 'linkedin' ? "Copied!" : "Copy"}</button>
                     </CopyToClipboard>
                 </div>
             </div>

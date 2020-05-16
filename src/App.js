@@ -7,7 +7,7 @@ import Audio from './components/Audio/Audio'
 function App() {
   return (
     <div className="App">
-      {/* <Space></Space> */}
+      <Space></Space>
       <div className="contentWrapper">
         <NavComp></NavComp>
         {/* <Audio></Audio> */}

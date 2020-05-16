@@ -51,6 +51,7 @@
     color: rgb(233, 221, 221);
     font-size: larger;
     height: max-content;
+    outline: none;
 }
 
 /* contact bar */
@@ -65,6 +66,7 @@
 
 .contactBar a:visited {
     color: white;
+    outline: none;
 }
 
 /* form  */
@@ -96,6 +98,7 @@
     font-weight: bolder;
     font-size: larger;
     padding: 2%;
+    outline: none;
 }
 
 @media(max-width:768px) {
