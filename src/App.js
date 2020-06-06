@@ -10,7 +10,7 @@ function App() {
       <Space></Space>
       <div className="contentWrapper">
         <NavComp></NavComp>
-        {/* <Audio></Audio> */}
+        <Audio></Audio>
       </div>
     </div>
   );

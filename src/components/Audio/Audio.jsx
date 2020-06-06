@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Audio.module.css'
 import { Howl, Howler } from 'howler';
 import para from './Paradigm.mp3'
 
 
 function Audio() {
+    const [isPlaying, setIsPlaying] = useState(true)
 
     var sound = new Howl({
         src: [para],
@@ -22,11 +23,13 @@ function Audio() {
         if (sound.playing() === false) {
             sound.play()
             sound.fade(0, 1, 2000)
+            setIsPlaying(true);
             return
         }
         if (sound.playing()) {
             sound.fade(1, 0, 2000)
             setTimeout(() => { sound.stop() }, 2100)
+            setIsPlaying(false)
             return
         }
     }
@@ -34,8 +37,10 @@ function Audio() {
 
     return (
         <div className={styles.audioContainer}>
-            <button onClick={handleclick}> Mute</button>
-
+            <button onClick={handleclick} id="musicButton">
+                <i className={isPlaying ? `fa fa-music fa-5x ` : `fa fa-play fa-5x `}></i>
+            </button>
+            <label htmlFor="musicButton"><h3>Paradigm</h3> <h4>Revolt Production Music</h4> </label>
         </div>
     )
 }

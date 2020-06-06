@@ -25,8 +25,8 @@
     align-self: flex-end;
     margin: 2% 3% 0% 0%;
     background: none;
-    border: 0.5px solid white;
-    color: white;
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    color: rgba(234, 235, 241, 0.7);
     font-weight: bolder;
     font-size: larger;
     padding: 2%;

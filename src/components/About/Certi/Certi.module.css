@@ -6,7 +6,7 @@
 }
 
 .itemContainer {
-    border: 1px solid white;
+    border: 1px solid rgba(236, 228, 228, 0.2);
     display: flex;
 }
 
@@ -56,12 +56,13 @@
 
 .loadButton button {
     background: none;
-    color: white;
+    color: rgba(236, 228, 228, 0.8);
     text-decoration: none;
     font-size: small;
-    border: 1px solid whitesmoke;
+    border: 0.5px solid rgba(236, 228, 228, 0.4);
     letter-spacing: 2px;
     font-family: Poppins;
+    margin: 10px;
 }
 
 @media(max-width:760px) {

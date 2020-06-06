@@ -9,7 +9,7 @@ import udemy from './assests/udemy.jpg'
 
 
 function About({ handleClose }) {
-    const skills = ['javascript', 'HTML', 'CSS', 'React', 'Node JS', 'Mongo Db', 'jquery', 'bootstrap', 'sass', 'webgl', 'sql',]
+    const skills = ['javascript', 'HTML', 'CSS', 'React', 'Redux', 'UI/UX', 'Node JS', 'Mongo Db', 'jquery', 'bootstrap', 'sass', 'webgl', 'sql', 'JSON', 'django', 'figma', 'Adobe Xd', 'JAVA', 'C++']
     const certificates = [{ title: "APIs and Microservices", from: 'freeCodeCamp', credential: "bull", image: FCC },
     { title: "JavaScript Algorithms and Data Structures", from: 'freeCodeCamp', credential: "bull", image: FCC },
     { title: "Responsive Web Design", from: 'freeCodeCamp', credential: "bull", image: FCC },

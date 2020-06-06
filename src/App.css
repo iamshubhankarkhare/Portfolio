@@ -30,7 +30,7 @@ canvas {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   z-index: 50;
   top: 0%;
 }
