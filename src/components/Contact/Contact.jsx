@@ -15,7 +15,7 @@ function Contact({ handleClose }) {
         <div className={styles.container}>
             <button className={styles.closebtn} onClick={(e) => handleClose(e)}>X</button>
             <div className={styles.contactMe}>
-                <h1>Contact me :</h1>
+                <h1>Let's work together:</h1>
                 <div className={styles.itemContainer}>
                     <h3>E-mail : iamshubhankarkhare@gmail.com </h3>
                     <CopyToClipboard text="iamshubhankarkhare@gmail.com">

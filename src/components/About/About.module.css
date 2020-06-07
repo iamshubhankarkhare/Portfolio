@@ -36,18 +36,20 @@
 
 .para {
     margin: 5%;
-    font-size: large;
-    font-family: Poppins;
-    letter-spacing: 1px;
+    font-size: medium;
+    font-family: Poppins, Helvetica, sans-serif;
+    letter-spacing: 2px;
     word-spacing: 3px;
+    font-weight: 30;
     color: white;
 }
+
 
 /* for skills */
 
 .aboutContainer h1 {
     align-self: flex-start;
-    margin-left: 5%;
+    margin: 5%;
     letter-spacing: 2px;
     font-size: x-large;
     font-family: Poppins;
@@ -60,8 +62,13 @@
     width: 100%;
 }
 
+
 @media(max-width:768px) {
     .imgDiv {
         margin-top: 10%;
+    }
+
+    .para {
+        font-size: smaller;
     }
 }

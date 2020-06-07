@@ -8,6 +8,7 @@ function NavComp() {
     const [activeTab, setActiveTab] = useState('0');
     const [hideNav, setHideNav] = useState(false)
 
+
     const toggle = tab => {
         if (activeTab !== tab) {
             setActiveTab(tab);
@@ -20,12 +21,12 @@ function NavComp() {
 
     }
     const handleClose = (e) => {
-        console.log("pressed");
         if (e) {
             setActiveTab('0')
             setHideNav(false)
         }
     }
+
 
     return (
         <div className={styles.navContainer}>
@@ -43,7 +44,7 @@ function NavComp() {
                 <Contact handleClose={handleClose}></Contact>
             </div>
             <div className={`${styles.navButtons} ${hideNav ? styles.hide : ''}`}>
-                <button onClick={() => { toggle('1'); }}>About me</button>
+                <button onClick={() => { toggle('1'); }}>About</button>
                 <button onClick={() => { toggle('2'); }}>Projects</button>
                 <button onClick={() => { toggle('3'); }}>Contact</button>
 

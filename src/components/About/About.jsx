@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import styles from './About.module.css'
 import TechStack from '../techStack/TechStack'
 import Certi from './Certi/Certi'
@@ -9,6 +9,15 @@ import udemy from './assests/udemy.jpg'
 
 
 function About({ handleClose }) {
+    const paraRef = useRef(null)
+
+
+
+
+
+
+
+
     const skills = ['javascript', 'HTML', 'CSS', 'React', 'Redux', 'UI/UX', 'Node JS', 'Mongo Db', 'jquery', 'bootstrap', 'sass', 'webgl', 'sql', 'JSON', 'django', 'figma', 'Adobe Xd', 'JAVA', 'C++']
     const certificates = [{ title: "APIs and Microservices", from: 'freeCodeCamp', credential: "bull", image: FCC },
     { title: "JavaScript Algorithms and Data Structures", from: 'freeCodeCamp', credential: "bull", image: FCC },
@@ -20,17 +29,14 @@ function About({ handleClose }) {
 
 
     return (
-        <div className={styles.aboutContainer}>
+        <div className={styles.aboutContainer} >
             <button className={styles.closebtn} onClick={(e) => handleClose(e)}>X</button>
             <div className={styles.imgDiv}></div>
-            <div className={styles.para}>
-                Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
-
-                It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense, but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
-
-                It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin words are repeated.
-
-                Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of font choice and font size .
+            <div className={styles.para} ref={paraRef}>
+                I love space (no kidding). I am a full stack(MERN) developer shaping websites, garnishing them with animations and intriguing features.
+                Coupled with this , I'm very passionate about UI/UX designing.
+                Currently pursuiing a degree in B.Tech, CSE, I have always been an eager learner, enthralled by technology , I've been enganging myself in a variety of projects.
+                Eagerly anticipating an opportunity to myself into a better developer as well as striving to raise the standards of the entire community.
             </div>
             <h1> Skills:</h1>
             <div className={styles.skills}>

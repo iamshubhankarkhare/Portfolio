@@ -23,7 +23,8 @@
 
 .container h1 {
     font-weight: 100;
-    margin-left: 5%;
+    margin-left: 10%;
+    font-family: Poppins, Helvetica, sans-serif;
 }
 
 .itemContainer {
@@ -34,8 +35,8 @@
     font-family: Poppins;
     letter-spacing: 1px;
     font-size: medium;
-    margin: 0% 5% 0% 5%;
     color: white;
+    margin: 10%;
 }
 
 .itemContainer a {
@@ -58,7 +59,7 @@
 
 .contactBar {
     display: flex;
-    margin-top: 2%;
+    margin: 2% 0 5% 0;
     width: 50%;
     justify-content: space-evenly;
     align-self: center;
@@ -72,13 +73,24 @@
 /* form  */
 
 .formStyle {
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .formStyle label {
     font-weight: 100;
     font-family: Poppins;
     letter-spacing: 2px;
+    margin: 10% 0 !important;
+}
+
+.formStyle input,
+textarea {
+    margin-left: 15px;
+}
+
+.formStyle p {
+    margin: 5% 0;
+    font-size: small;
 }
 
 .formStyle form {
@@ -96,8 +108,10 @@
     border: 0.5px solid rgba(255, 255, 255, 0.4);
     color: rgba(255, 255, 255, 0.8);
     font-weight: bolder;
-    font-size: larger;
-    padding: 2%;
+    font-size: medium;
+    font-family: Poppins, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    padding: 2% 5%;
     outline: none;
 }
 
@@ -132,5 +146,11 @@
     .contactBar a {
         margin: auto;
         font-size: smaller;
+    }
+
+    .formStyle input,
+    textarea {
+        margin-left: 0px;
+        margin-top: 10px;
     }
 }

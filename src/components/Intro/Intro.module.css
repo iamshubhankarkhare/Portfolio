@@ -11,23 +11,25 @@
 }
 
 .container h1 {
-    font-size: 4rem;
-    letter-spacing: px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
     font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins, Helvetica, sans-serif;
 }
 
 .container span {
     font-weight: 10;
     letter-spacing: 3px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-top: 10%;
 }
 
 @media(max-width:760px) {
     .container h1 {
-        font-size: xx-large;
+        font-size: x-large;
     }
+
     .container span {
-        font-size: large;
+        font-size: medium;
     }
 }

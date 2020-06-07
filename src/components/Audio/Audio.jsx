@@ -20,16 +20,21 @@ function Audio() {
 
 
     const handleclick = () => {
-        if (sound.playing() === false) {
-            sound.play()
-            sound.fade(0, 1, 2000)
-            setIsPlaying(true);
+        setIsPlaying(!isPlaying)
+
+        if (!isPlaying) {
+
+            Howler.mute(false)
+            sound.fade(0.3, 1, 1000)
             return
         }
-        if (sound.playing()) {
-            sound.fade(1, 0, 2000)
-            setTimeout(() => { sound.stop() }, 2100)
-            setIsPlaying(false)
+        if (isPlaying) {
+            console.log("band" + sound.playing());
+            sound.fade(1, 0.3, 1000)
+            setTimeout(() => {
+                Howler.mute(true)
+            }, 1100);
+
             return
         }
     }
