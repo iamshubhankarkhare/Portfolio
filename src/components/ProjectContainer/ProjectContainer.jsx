@@ -14,14 +14,15 @@ function ProjectContainer({ handleClose }) {
         }
 
     }
-    console.log(data.projects);
-
-
 
     return (
         <div className={styles.Container}>
-            <button className={styles.closebtn} onClick={(e) => handleClose(e)}>X</button>
+            <div className={styles.topbar}>
+                <h1>Projects</h1>
 
+                <button className={styles.closebtn} onClick={(e) => handleClose(e)}>X</button>
+
+            </div>
             <div id={(activeTab === '0' ? styles.active : '')} className={styles.content}>
                 <Project data={data.projects}></Project>
             </div>

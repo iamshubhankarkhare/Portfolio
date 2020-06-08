@@ -7,6 +7,20 @@
 
 }
 
+.topbar {
+    display: flex;
+    color: white;
+    font-size: small;
+    font-weight: 80 !important;
+    font-family: Poppins, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    justify-content: space-between;
+}
+
+.topbar h1 {
+    margin: 5px 0 5px 15px;
+}
+
 #activeBtn {
     background: rgba(193, 196, 206, 0.3) !important;
 }
@@ -40,7 +54,7 @@
 }
 
 .closebtn {
-    align-self: flex-end;
+    justify-self: flex-end;
     margin: 2% 3% 0% 0%;
     background: none;
     border: 0.5px solid rgba(255, 255, 255, 0.4);
