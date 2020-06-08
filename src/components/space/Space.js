@@ -15,6 +15,8 @@ class ThreeScene extends Component {
     }
 
     componentDidMount() {
+        console.log("mounted " + Date.now());
+
         this.sceneSetup();
         //ADD CUBE
         this.starGeo = new THREE.Geometry();
@@ -163,28 +165,7 @@ class ThreeScene extends Component {
 
 
     }
-    // onDocumentTouchStart = (e) => {
 
-    //     if (e.touches.length === 1) {
-
-    //         e.preventDefault();
-    //         let tempX = e.touches[0].pageX - (this.mount.clientWidth / 2);
-    //         let tempY = e.touches[0].pageY - (this.mount.clientHeight / 2);
-    //         this.setState({ mouseX: tempX })
-    //         this.setState({ mouseY: tempY })
-    //     }
-    // }
-    // onDocumentTouchMove = (e) => {
-
-    //     if (e.touches.length === 1) {
-
-    //         e.preventDefault();
-    //         let tempX = e.touches[0].pageX - (this.mount.clientWidth / 2);
-    //         let tempY = e.touches[0].pageY - (this.mount.clientHeight / 2);
-    //         this.setState({ mouseX: tempX })
-    //         this.setState({ mouseY: tempY })
-    //     }
-    // }
     renderScene = () => {
         this.renderer.render(this.scene, this.camera)
     }
