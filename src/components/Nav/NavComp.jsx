@@ -3,7 +3,7 @@ import styles from "./NavComp.module.css";
 import Intro from '../Intro/Intro'
 import About from '../About/About'
 import Contact from '../Contact/Contact'
-import Project from '../Project/Project'
+import ProjectContainer from '../ProjectContainer/ProjectContainer'
 
 function NavComp() {
     const [activeTab, setActiveTab] = useState('0');
@@ -39,7 +39,7 @@ function NavComp() {
 
             </div>
             <div id={(activeTab === '2' ? styles.active : '')} className={styles.content}>
-                <Project handleClose={handleClose}></Project>
+                <ProjectContainer handleClose={handleClose}></ProjectContainer>
             </div>
             <div id={(activeTab === '3' ? styles.active : '')} className={styles.content}>
                 <Contact handleClose={handleClose}></Contact>

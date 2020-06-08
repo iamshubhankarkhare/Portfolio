@@ -1,0 +1,44 @@
+{
+    "projects": [{
+            "title": "RaamuBot",
+            "Description": "friendly telegram bot",
+            "tech": ["nodejs", "Javasript", "Heroku"],
+            "links": {
+                "visit": "visiting",
+                "code": "codes",
+                "video": "https://www.youtube.com/"
+            }
+        },
+        {
+            "title": "Buzz N go",
+            "Description": "ChatApp",
+            "tech": ["Javasript", "nodejs", "ReactJs", "socket.io", "Heroku"],
+            "links": {
+                "visit": "visiting",
+                "code": "codes",
+                "video": "video link"
+            }
+        },
+        {
+            "title": "RaamuBot",
+            "Description": "friendly telegram bot",
+            "tech": ["nodejs", "Javasript", "Heroku"],
+            "links": {
+                "visit": "visiting",
+                "code": "codes",
+                "video": "https://www.youtube.com/"
+            }
+        },
+        {
+            "title": "Buzz N go",
+            "Description": "ChatApp",
+            "tech": ["Javasript", "nodejs", "ReactJs", "socket.io", "Heroku"],
+            "links": {
+                "visit": "visiting",
+                "code": "codes",
+                "video": "video link"
+            }
+        }
+
+    ]
+}

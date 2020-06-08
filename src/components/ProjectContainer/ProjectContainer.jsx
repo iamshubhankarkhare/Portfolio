@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import styles from './Project.module.css'
+import styles from './ProjectContainer.module.css'
+import Project from './Project/Project'
+import data from './assests/mainProjects.json'
 
-function Project({ handleClose }) {
+function ProjectContainer({ handleClose }) {
     const [activeTab, setActiveTab] = useState('0');
-    // const [activeBtn, setActiveBtn] = useState('0')
-
     const toggle = tab => {
         if (activeTab !== tab) {
             setActiveTab(tab);
@@ -14,6 +14,7 @@ function Project({ handleClose }) {
         }
 
     }
+    console.log(data.projects);
 
 
 
@@ -22,7 +23,7 @@ function Project({ handleClose }) {
             <button className={styles.closebtn} onClick={(e) => handleClose(e)}>X</button>
 
             <div id={(activeTab === '0' ? styles.active : '')} className={styles.content}>
-                <h3>Projects</h3>
+                <Project data={data.projects}></Project>
             </div>
             <div id={(activeTab === '1' ? styles.active : '')} className={styles.content}>
                 <h3>mini</h3>
@@ -38,4 +39,4 @@ function Project({ handleClose }) {
     )
 }
 
-export default Project
+export default ProjectContainer

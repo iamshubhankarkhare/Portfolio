@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     background: transparent;
+    height: 80%;
 }
 
 .container h3 {
@@ -13,5 +14,12 @@
     color: white;
     font-weight: 100;
     font-family: Poppins;
-    font-size: smaller;
+}
+
+#big {
+    font-size: smaller !important;
+}
+
+#small {
+    font-size: xx-small !important;
 }

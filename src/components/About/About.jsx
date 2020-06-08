@@ -40,7 +40,7 @@ function About({ handleClose }) {
             </div>
             <h1> Skills:</h1>
             <div className={styles.skills}>
-                <TechStack skills={skills}></TechStack>
+                <TechStack skills={skills} font="big"></TechStack>
             </div>
             <h1> Achievements and certificates:</h1>
             <div className={styles.certi}>
