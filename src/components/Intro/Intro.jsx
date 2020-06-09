@@ -1,16 +1,40 @@
 import React, { memo } from 'react'
 import styles from './Intro.module.css'
+import Typewriter from 'typewriter-effect';
+import Fade from 'react-reveal/Fade';
+
 
 function Intro() {
-    console.log("untro mounted " + Date.now());
 
 
     return (
-        <div className={styles.container}>
-            <h1> Hi, I'm <br />Shubhankar</h1>
-            <span>A full stack developer</span>
+        <Fade duration={2000}>
+            <div className={styles.container}>
+                <h1> Hi, I'm <br />Shubhankar</h1>
+                <Typewriter
+                    options={{
+                        autoStart: true,
+                        loop: true,
+                        deleteSpeed: 5,
+                        delay: 100,
+                    }}
+                    onInit={(typewriter) => {
+                        typewriter.typeString("I'm a full stack developer.")
+                            .pauseFor(2000)
+                            .deleteChars(21)
+                            .pauseFor(500)
+                            .typeString("CSE student.")
+                            .pauseFor(2000)
+                            .deleteChars(14)
+                            .pauseFor(500)
+                            .typeString("an Open-Source enthusiast.")
+                            .pauseFor(2000)
+                            .start();
+                    }}
+                />
 
-        </div>
+            </div>
+        </Fade>
     )
 }
 

@@ -5,6 +5,7 @@
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -48,10 +49,24 @@
     animation: animate 0.5s linear infinite;
 }
 
+.container h4 {
+    position: absolute;
+    justify-self: flex-end;
+    margin-top: 10%;
+    bottom: 20%;
+    color: white;
+    font-family: Poppins, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 50;
+    font-size: medium;
+}
+
+
 @keyframes animate {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }

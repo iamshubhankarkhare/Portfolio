@@ -15,18 +15,22 @@
     letter-spacing: 2px;
     font-weight: 100;
     font-family: Poppins, Helvetica, sans-serif;
+    margin-bottom: 10%;
 }
 
 .container span {
     font-weight: 10;
     letter-spacing: 3px;
     font-size: 1.5rem;
-    margin-top: 10%;
+    padding: 2px;
+
 }
 
 @media(max-width:760px) {
     .container h1 {
         font-size: x-large;
+        margin-bottom: 20%;
+
     }
 
     .container span {

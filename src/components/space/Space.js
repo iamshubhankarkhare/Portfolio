@@ -15,7 +15,6 @@ class ThreeScene extends Component {
     }
 
     componentDidMount() {
-        console.log("mounted " + Date.now());
 
         this.sceneSetup();
         //ADD CUBE
@@ -45,7 +44,6 @@ class ThreeScene extends Component {
 
         this.stars = new THREE.Points(this.starGeo, starMaterial);
         this.scene.add(this.stars);
-        console.log("strs added");
 
 
         this.start()
@@ -82,7 +80,6 @@ class ThreeScene extends Component {
                 back,
             ]);
             this.scene.background = texture;
-            console.log("added bg");
 
         }
 

@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     background: transparent;
     height: 80%;
+    justify-content: center;
 }
 
 .container h3 {

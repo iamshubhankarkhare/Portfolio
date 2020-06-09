@@ -64,12 +64,12 @@
     padding: 2%;
 }
 
-@media(min-width:760px) {
+@media(max-width:760px) {
     .content {
         min-height: 70%;
     }
 
     .closebtn {
-        padding: 2% 3%;
+        padding: 0 3% !important;
     }
 }
