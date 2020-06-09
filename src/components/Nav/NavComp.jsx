@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, memo } from 'react'
 import styles from "./NavComp.module.css";
 import Intro from '../Intro/Intro'
 import About from '../About/About'
@@ -31,19 +31,23 @@ function NavComp() {
 
     return (
         <div className={styles.navContainer}>
-            <div id={(activeTab === '0' ? styles.active : '')} className={styles.content}>
+            {(activeTab === '0') && <div id={(activeTab === '0' ? styles.active : '')} className={styles.content}>
                 <Intro></Intro>
-            </div>
-            <div id={(activeTab === '1' ? styles.active : '')} className={styles.content}>
-                <About handleClose={handleClose}></About>
+            </div>}
 
-            </div>
-            <div id={(activeTab === '2' ? styles.active : '')} className={styles.content}>
-                <ProjectContainer handleClose={handleClose}></ProjectContainer>
-            </div>
-            <div id={(activeTab === '3' ? styles.active : '')} className={styles.content}>
-                <Contact handleClose={handleClose}></Contact>
-            </div>
+            {(activeTab === '1') &&
+                <div id={(activeTab === '1' ? styles.active : '')} className={styles.content}>
+                    <About handleClose={handleClose}></About>
+                </div>}
+            {(activeTab === '2') &&
+                <div id={(activeTab === '2' ? styles.active : '')} className={styles.content}>
+                    <ProjectContainer handleClose={handleClose}></ProjectContainer>
+                </div>}
+
+            {(activeTab === '3') &&
+                <div id={(activeTab === '3' ? styles.active : '')} className={styles.content}>
+                    <Contact handleClose={handleClose}></Contact>
+                </div>}
             <div className={`${styles.navButtons} ${hideNav ? styles.hide : ''}`}>
                 <button onClick={() => { toggle('1'); }}>About</button>
                 <button onClick={() => { toggle('2'); }}>Projects</button>
@@ -58,4 +62,4 @@ function NavComp() {
     )
 }
 
-export default NavComp
+export default memo(NavComp)

@@ -6,6 +6,8 @@ import para from './Paradigm.mp3'
 
 function Audio() {
     const [isPlaying, setIsPlaying] = useState(true)
+    console.log("audio mounted " + Date.now());
+
 
     var sound = new Howl({
         src: [para],

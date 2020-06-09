@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styles from './TechStack.module.css'
 
 function techStack({ skills, font }) {
@@ -11,4 +11,4 @@ function techStack({ skills, font }) {
     )
 }
 
-export default techStack
+export default memo(techStack)

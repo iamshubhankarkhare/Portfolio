@@ -1,0 +1,24 @@
+{
+    "projects": [{
+            "title": "Landing_page_x",
+            "Description": "Coffee themed landing page",
+            "tech": ["HTML", "Javasript", "CSS"],
+            "links": {
+                "visit": "visiting",
+                "code": "codes",
+                "video": "https://www.youtube.com/"
+            }
+        },
+        {
+            "title": "Buzz N go",
+            "Description": "ChatApp",
+            "tech": ["Javasript", "nodejs", "ReactJs", "socket.io", "Heroku"],
+            "links": {
+                "visit": "visiting",
+                "code": "codes",
+                "video": "video link"
+            }
+        }
+
+    ]
+}

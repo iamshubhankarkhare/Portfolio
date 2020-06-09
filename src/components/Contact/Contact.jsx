@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, memo } from 'react'
 import styles from './Contact.module.css'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 
 function Contact({ handleClose }) {
     const [isCopied, setIsCopied] = useState('')
+    console.log(" contact mounted " + Date.now());
+
     const handleCopy = (e) => {
         setIsCopied(e)
         setTimeout(() => {
@@ -64,4 +66,4 @@ function Contact({ handleClose }) {
     )
 }
 
-export default Contact
+export default memo(Contact)

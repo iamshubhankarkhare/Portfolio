@@ -1,15 +1,17 @@
-import React, { useRef } from 'react'
+import React, { useRef, Suspense, memo } from 'react'
 import styles from './About.module.css'
 import TechStack from '../techStack/TechStack'
 import Certi from './Certi/Certi'
 import FCC from './assests/0.jpeg'
 import udemy from './assests/udemy.jpg'
+import CircleLoader from "react-spinners/CircleLoader";
 
 
 
 
 function About({ handleClose }) {
     const paraRef = useRef(null)
+    console.log("about mounted " + Date.now());
 
 
 
@@ -31,12 +33,19 @@ function About({ handleClose }) {
     return (
         <div className={styles.aboutContainer} >
             <button className={styles.closebtn} onClick={(e) => handleClose(e)}>X</button>
-            <div className={styles.imgDiv}></div>
+            <Suspense fallback={<CircleLoader size={150}
+                color={"#123abc"}
+                loading={true}></CircleLoader>}>
+                <div className={styles.imgDiv}></div>
+
+
+            </Suspense>
+
             <div className={styles.para} ref={paraRef}>
                 I love space (no kidding). I am a full stack(MERN) developer shaping websites, garnishing them with animations and intriguing features.
                 Coupled with this , I'm very passionate about UI/UX designing.
                 Currently pursuiing a degree in B.Tech, CSE, I have always been an eager learner, enthralled by technology , I've been enganging myself in a variety of projects.
-                Eagerly anticipating an opportunity to myself into a better developer as well as striving to raise the standards of the entire community.
+                Eagerly anticipating an opportunity to mould myself into a better developer as well as striving to raise the standards of the entire community.
             </div>
             <h1> Skills:</h1>
             <div className={styles.skills}>
@@ -54,4 +63,4 @@ function About({ handleClose }) {
     )
 }
 
-export default About
+export default memo(About)

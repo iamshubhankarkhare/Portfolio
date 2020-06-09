@@ -5,6 +5,8 @@ import NavComp from './components/Nav/NavComp'
 import Audio from './components/Audio/Audio'
 import Loader from './components/Loader/Loader'
 
+
+
 function App() {
   const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
@@ -31,5 +33,7 @@ function App() {
     </Fragment>)
   );
 }
+
+
 
 export default App;

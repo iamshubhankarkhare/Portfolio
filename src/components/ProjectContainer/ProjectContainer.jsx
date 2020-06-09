@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 import styles from './ProjectContainer.module.css'
 import Project from './Project/Project'
 import data from './assests/mainProjects.json'
+import data2 from './assests/miniProjects.json'
 
 function ProjectContainer({ handleClose }) {
     const [activeTab, setActiveTab] = useState('0');
+    console.log(" project mounted " + Date.now());
+
     const toggle = tab => {
         if (activeTab !== tab) {
             setActiveTab(tab);
@@ -23,12 +26,15 @@ function ProjectContainer({ handleClose }) {
                 <button className={styles.closebtn} onClick={(e) => handleClose(e)}>X</button>
 
             </div>
-            <div id={(activeTab === '0' ? styles.active : '')} className={styles.content}>
-                <Project data={data.projects}></Project>
-            </div>
-            <div id={(activeTab === '1' ? styles.active : '')} className={styles.content}>
-                <h3>mini</h3>
-            </div>
+            {(activeTab === '0') &&
+                (<div id={(activeTab === '0' ? styles.active : '')} className={styles.content}>
+                    <Project data={data.projects}></Project>
+                </div>)}
+
+            {(activeTab === '1') &&
+                <div id={(activeTab === '1' ? styles.active : '')} className={styles.content}>
+                    <Project data={data2.projects}></Project>
+                </div>}
 
             <div className={styles.navButtons}>
                 <button onClick={() => toggle('0')} id={(activeTab === '0' ? styles.activeBtn : '')} >Projects</button>

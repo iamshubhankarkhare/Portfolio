@@ -3,7 +3,7 @@ import styles from './Project.module.css'
 import Tech from '../../techStack/TechStack'
 
 function Project({ data }) {
-    console.log("from project  " + data[0].title);
+    console.log(" poopoo mounted " + Date.now());
 
     return (
         <div className={styles.container}>

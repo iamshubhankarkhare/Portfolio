@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styles from './Intro.module.css'
 
 function Intro() {
+    console.log("untro mounted " + Date.now());
 
 
     return (
@@ -13,4 +14,4 @@ function Intro() {
     )
 }
 
-export default Intro
+export default memo(Intro)

@@ -35,7 +35,7 @@
 .navButtons {
     display: flex;
     justify-content: center;
-    height: 10%;
+    height: 20%;
 }
 
 .navButtons button {
@@ -67,5 +67,9 @@
 @media(min-width:760px) {
     .content {
         min-height: 70%;
+    }
+
+    .closebtn {
+        padding: 2% 3%;
     }
 }
