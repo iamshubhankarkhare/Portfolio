@@ -2,10 +2,34 @@ import React, { useState, memo } from 'react'
 import styles from './Contact.module.css'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
 
 function Contact({ handleClose }) {
     const [isCopied, setIsCopied] = useState('')
+    const [name, setname] = useState('')
+    const [email, setemail] = useState('')
+    const [message, setmessage] = useState('')
+
+
     console.log(" contact mounted " + Date.now());
+    console.log(name, email, message);
+
+    const handleSubmit = e => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...this.state })
+        })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+
+        e.preventDefault();
+    };
+
 
     const handleCopy = (e) => {
         setIsCopied(e)
@@ -46,15 +70,15 @@ function Contact({ handleClose }) {
             <h1>Leave a message :</h1>
 
             <div className={styles.formStyle}>
-                <form name="contact" method="POST">
+                <form onSubmit={handleSubmit}>
                     <p>
-                        <label>Your Name: <input type="text" name="name" /></label>
+                        <label>Your Name: <input type="text" name="name" value={name} onChange={(e) => setname(e.target.value)} /></label>
                     </p>
                     <p>
-                        <label>Your Email: <input type="email" name="email" /></label>
+                        <label>Your Email: <input type="email" name="email" value={email} onChange={(e) => setemail(e.target.value)} /></label>
                     </p>
                     <p>
-                        <label>Message: <input type="text" name="message"></input></label>
+                        <label>Message: <input type="text" name="message" value={message} onChange={(e) => setmessage(e.target.value)}></input></label>
                     </p>
                     <button type="submit">Send</button>
                 </form>

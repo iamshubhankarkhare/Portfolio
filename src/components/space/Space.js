@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import starPng from './assests/star.png'
-import right from './assests/blue/bkg1_right.png'
-import left from './assests/blue/bkg1_left.png'
-import top from './assests/blue/bkg1_top.png'
-import bottom from './assests/blue/bkg1_bot.png'
-import front from './assests/blue/bkg1_front.png'
-import back from './assests/blue/bkg1_back.png'
+import right from './assests/blue/bkg1_right.jpg'
+import left from './assests/blue/bkg1_left.jpg'
+import top from './assests/blue/bkg1_top.jpg'
+import bottom from './assests/blue/bkg1_bot.jpg'
+import front from './assests/blue/bkg1_front.jpg'
+import back from './assests/blue/bkg1_back.jpg'
 
 import * as THREE from 'three';
 class ThreeScene extends Component {
