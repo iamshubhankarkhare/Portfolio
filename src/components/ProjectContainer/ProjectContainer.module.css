@@ -18,7 +18,7 @@
 }
 
 .topbar h1 {
-    margin: 5px 0 5px 15px;
+    margin: 2% 0 5px 15px;
 }
 
 #activeBtn {
@@ -27,7 +27,7 @@
 
 .content {
     height: auto;
-    min-height: 80%;
+    min-height: 60%;
     color: white;
     display: none;
 }
@@ -35,7 +35,7 @@
 .navButtons {
     display: flex;
     justify-content: center;
-    height: 20%;
+    min-height: 10%;
 }
 
 .navButtons button {
@@ -55,7 +55,7 @@
 
 .closebtn {
     justify-self: flex-end;
-    margin: 2% 3% 0% 0%;
+    margin: 2% 3% 2% 2%;
     background: none;
     border: 0.5px solid rgba(255, 255, 255, 0.4);
     color: rgba(234, 235, 241, 0.7);
@@ -70,6 +70,6 @@
     }
 
     .closebtn {
-        padding: 0 3% !important;
+        padding: 0% 3% !important;
     }
 }

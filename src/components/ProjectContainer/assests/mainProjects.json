@@ -1,41 +1,41 @@
 {
     "projects": [{
-            "title": "RaamuBot",
-            "Description": "friendly telegram bot",
-            "tech": ["nodejs", "Javasript", "Heroku"],
+            "title": "Buzz and go",
+            "Description": "It is a real time Web chat application. One can create a temporary chatroom, invite others in it ,and the room is deleted when all the members are offline. Hustle-free chat.",
+            "tech": ["NodeJS", "ReactJs", "socket.io", "Heroku"],
             "links": {
-                "visit": "visiting",
-                "code": "codes",
-                "video": "https://www.youtube.com/"
-            }
-        },
-        {
-            "title": "Buzz N go",
-            "Description": "ChatApp",
-            "tech": ["Javasript", "nodejs", "ReactJs", "socket.io", "Heroku"],
-            "links": {
-                "visit": "visiting",
-                "code": "codes",
+                "visit": "https://buzz-and-go.herokuapp.com/",
+                "code": "https://github.com/iamshubhankarkhare/Chat-application",
                 "video": "video link"
             }
         },
         {
             "title": "RaamuBot",
-            "Description": "friendly telegram bot",
-            "tech": ["nodejs", "Javasript", "Heroku"],
+            "Description": "Raamubot is a funny friendly telegram bot built on node js. It keeps a track of all online classes and give timely reminders about the class. It provides daily covid stats of India. It gives the users details of a particular movie. It gives the users some random facts when asked. It sends polls in the chat for convenience. It sends response for certain sentences and a lot more. checkout the video demo.",
+            "tech": ["nodejs", "Javasript", "Heroku", "TelegramBotApi"],
             "links": {
-                "visit": "visiting",
-                "code": "codes",
+                "visit": "https://www.evernote.com/shard/s646/client/snv?noteGuid=ef8ed3fc-291e-4a86-ac87-677aa77bc222&noteKey=1a34dcc93d7faf102746f9139944bab4&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs646%2Fsh%2Fef8ed3fc-291e-4a86-ac87-677aa77bc222%2F1a34dcc93d7faf102746f9139944bab4&title=Raamubot%2B%2528telegram%2Bbot%2B%2529",
+                "code": "https://github.com/iamshubhankarkhare/Raamubot",
                 "video": "https://www.youtube.com/"
             }
         },
         {
-            "title": "Buzz N go",
-            "Description": "ChatApp",
-            "tech": ["Javasript", "nodejs", "ReactJs", "socket.io", "Heroku"],
+            "title": "Covid-19 Tracker ",
+            "Description": "This app provides real time stats of covid-19 (global, countrywise, and indian states) and related news.",
+            "tech": ["Javasript", "ReactJs", "ChartJs"],
             "links": {
-                "visit": "visiting",
-                "code": "codes",
+                "visit": "https://go-coronago.netlify.app/",
+                "code": "https://github.com/iamshubhankarkhare/covid19tracker",
+                "video": "video link"
+            }
+        },
+        {
+            "title": "Url shortner Microservice ",
+            "Description": "A microservice to shorten URLs",
+            "tech": ["NodeJs", "JS", "EJS"],
+            "links": {
+                "visit": "https://urlshortnerapi.glitch.me/",
+                "code": "https://github.com/iamshubhankarkhare/urlShortnerAPI",
                 "video": "video link"
             }
         }

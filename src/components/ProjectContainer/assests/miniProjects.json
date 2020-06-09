@@ -1,24 +1,65 @@
 {
     "projects": [{
-            "title": "Landing_page_x",
-            "Description": "Coffee themed landing page",
-            "tech": ["HTML", "Javasript", "CSS"],
+            "title": "Mern Shopping list",
+            "Description": "A shopping list mern app to practice the concepts of redux and mern in general",
+            "tech": ["NodeJs", "ReactJs", "CSS", "MongoDb", "Redux", "Express"],
             "links": {
-                "visit": "visiting",
-                "code": "codes",
+                "visit": "https://shoppinglist-mern-shubh.herokuapp.com/",
+                "code": "https://github.com/iamshubhankarkhare/mern_shopping",
                 "video": "https://www.youtube.com/"
             }
         },
         {
-            "title": "Buzz N go",
-            "Description": "ChatApp",
-            "tech": ["Javasript", "nodejs", "ReactJs", "socket.io", "Heroku"],
+            "title": "Landing_page_x",
+            "Description": "A Coffee themed landing page to boost up your caffiene levels",
+            "tech": ["HTML", "Javasript", "CSS", "GSAP"],
             "links": {
-                "visit": "visiting",
-                "code": "codes",
+                "visit": "https://caffiene.netlify.app/",
+                "code": "https://github.com/iamshubhankarkhare/LandingPage_X/",
+                "video": "https://www.youtube.com/"
+            }
+        },
+        {
+            "title": "LandinPage_S",
+            "Description": "A landing page to try out some gsap animations",
+            "tech": ["Javasript", "HTML", "CSS", "GSAP"],
+            "links": {
+                "visit": "https://iamshubhankarkhare.github.io/LandingPage_S/",
+                "code": "https://github.com/iamshubhankarkhare/LandingPage_S",
+                "video": "video link"
+            }
+        },
+        {
+            "title": "Mausam",
+            "Description": "A weather app made with react.The UI of the app changes according to the weather.",
+            "tech": ["Javasript", "Reactjs", "CSS"],
+            "links": {
+                "visit": "https://mausaam.netlify.app/",
+                "code": "https://github.com/iamshubhankarkhare/mausam",
+                "video": "video link"
+            }
+        },
+        {
+            "title": "Flappy Bird",
+            "Description": "Flappy bird is a web application hypercasual game. It is a modified clone of the famous 90's game Flappy bird ",
+            "tech": ["Javasript", "HTML", "CSS", "JQuery"],
+            "links": {
+                "visit": "https://iamshubhankarkhare.github.io/flappy-bird/",
+                "code": "https://github.com/iamshubhankarkhare/flappy-bird",
+                "video": "video link"
+            }
+        },
+        {
+            "title": "LandinPage_E",
+            "Description": "This is music themed landing page.",
+            "tech": ["Javasript", "HTML", "CSS", "GSAP"],
+            "links": {
+                "visit": "https://iamshubhankarkhare.github.io/LandingPage_E/",
+                "code": "https://github.com/iamshubhankarkhare/LandinPage_E",
                 "video": "video link"
             }
         }
+
 
     ]
 }
