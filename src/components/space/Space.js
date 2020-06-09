@@ -21,7 +21,7 @@ class ThreeScene extends Component {
         //ADD CUBE
         this.starGeo = new THREE.Geometry();
 
-        for (let i = 0; i < 3000; i++) {
+        for (let i = 0; i < 6000; i++) {
             let star = new THREE.Vector3(
                 Math.random() * 600 - 300,
                 Math.random() * 600 - 300,

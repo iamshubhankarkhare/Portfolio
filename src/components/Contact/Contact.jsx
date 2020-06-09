@@ -46,7 +46,7 @@ function Contact({ handleClose }) {
             <h1>Leave a message :</h1>
 
             <div className={styles.formStyle}>
-                <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                <form name="contact" method="POST">
                     <p>
                         <label>Your Name: <input type="text" name="name" /></label>
                     </p>
@@ -54,7 +54,7 @@ function Contact({ handleClose }) {
                         <label>Your Email: <input type="email" name="email" /></label>
                     </p>
                     <p>
-                        <label>Message: <textarea name="message"></textarea></label>
+                        <label>Message: <input type="text" name="message"></input></label>
                     </p>
                     <div data-netlify-recaptcha="true"></div>
                     <button type="submit">Send</button>
