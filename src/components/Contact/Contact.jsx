@@ -56,7 +56,6 @@ function Contact({ handleClose }) {
                     <p>
                         <label>Message: <input type="text" name="message"></input></label>
                     </p>
-                    <div data-netlify-recaptcha="true"></div>
                     <button type="submit">Send</button>
                 </form>
             </div>
